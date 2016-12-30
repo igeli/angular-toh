@@ -11,11 +11,12 @@ import 'rxjs/add/operator/switchMap';
 @Component({
 	moduleId: module.id,
   selector: 'my-hero-detail',
-  templateUrl: 'templates/hero-detail.component.html'
+  templateUrl: 'templates/hero-detail.component.html',
+  styleUrls: [ 'templates/hero-detail.component.css' ]
 })
 
 export class HeroDetailComponent implements OnInit{
-  @Input()
+  
   hero: Hero;
   constructor(
     private HeroService: HeroService,
